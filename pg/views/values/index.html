@@ -1,0 +1,19 @@
+<div ui-view="navbar"></div>
+<div ui-view="header"></div>
+<div class="container text-container page-content">
+  <!-- first value -->
+  <h2 class="section-heading text-center">{{ values[0].name }}</h2>
+  <p class="lead text-justify">{{ values[0].desc }}</p>
+  
+  <!-- other values -->
+  <div ng-repeat="v in values" ng-hide="$first">
+    <div class="clearfix"></div>
+    <hr class="page-section-spacer">
+    <div class="clearfix"></div>
+    <h2 class="section-heading text-center">{{ v.name }}</h2>
+    <p class="lead text-justify">{{ v.desc }}</p>
+  </div>
+</div>
+
+<div ui-view="contactBanner"></div>
+<div ui-view="footer"></div>

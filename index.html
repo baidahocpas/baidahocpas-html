@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="acctApp">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bennett & Associates, CPAs</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="inc/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="inc/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="inc/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="inc/favicon/manifest.json">
+<link rel="mask-icon" href="inc/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="inc/favicon/favicon.ico">
+<meta name="msapplication-config" content="inc/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Montserrat">
+<link rel="stylesheet" href="inc/lib/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="inc/main.css">
+
+</head>
+<body>
+
+<div ui-view></div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="//www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script src="//cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+<script src="inc/lib/angular-ui-router.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+  /*global firebase*/
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBZiZON8IWnoRCE7mvRf72gbZs9VoGxt8g",
+    authDomain: "workoutlog-3b5af.firebaseapp.com",
+    databaseURL: "https://workoutlog-3b5af.firebaseio.com",
+    storageBucket: "workoutlog-3b5af.appspot.com",
+    messagingSenderId: "1029594156796"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="inc/main.js"></script>
+<script src="pg/views/home/home.controller.js"></script>
+<script src="pg/views/contact/contact.controller.js"></script>
+<script src="pg/views/services/services.controller.js"></script>
+<script src="pg/views/success/success.controller.js"></script>
+<script src="pg/views/values/values.controller.js"></script>
+<script src="pg/views/auth/auth.controller.js"></script>
+<script src="pg/views/auth/auth.service.js"></script>
+
+</body>
+</html>

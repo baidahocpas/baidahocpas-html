@@ -1,0 +1,20 @@
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="footer col-md-6">
+        <p class="footer-list">
+          <a ui-sref="{{ siteNavLinks[0].sref }}">{{ siteNavLinks[0].name }}</a>
+          <span ng-if="siteNavLinks" ng-repeat="l in siteNavLinks" ng-hide="$first">
+            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a ui-sref="{{ l.sref }}">{{ l.name }}</a>
+          </span>
+        </p>
+        <p class="copyright text-muted small">&copy; 2016 Bennett & Associates, CPAs. All rights reserved.</p>
+      </div>
+      <div class="footer col-md-6">
+        <img src="inc/img/ba-skyline-trans.png" class="img-responsive footer-logo"></img>
+      </div>
+    </div>
+  </div>
+</footer>
