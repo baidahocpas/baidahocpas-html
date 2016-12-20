@@ -91,7 +91,7 @@ HOME
       text-align: center;
       color: #f8f8f8;
 /*       background: url(../img/intro-bg-2.jpg) no-repeat center center; */
-      background: url(../img/door.jpg) no-repeat center center;
+      background: url(../img/intro-bg-2.jpg) no-repeat center center;
       background-size: cover;
   }
   
@@ -113,8 +113,9 @@ HOME
       border-bottom: 1px solid rgba(0,0,0,0.2);
   }
   
-  .intro-message > h3 {
+  .intro-message > h2 {
       text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
   }
   
   @media(max-width:767px) {
