@@ -25,6 +25,10 @@ NAV_LINKS CONSTANT LOCATED IN /inc/main.js
         <li ng-if="externalNavLinks" class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
           <ul class="dropdown-menu">
+<!--             <li ng-repeat="l in otherSiteNavLinks">
+              <a href="{{ l.sref }}">{{ l.name }}</a>
+            </li>
+            <li role="separator" class="divider"></li> -->
             <li ng-repeat="l in externalNavLinks">
               <a href="{{ l.href }}" target="_blank">{{ l.name }}</a>
             </li>
