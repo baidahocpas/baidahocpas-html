@@ -57,6 +57,9 @@ div {
   }
 
 /* CONTACTBANNER */
+.text-white {
+  color: #fff;
+}
 
 /* FOOTER */
   footer {
